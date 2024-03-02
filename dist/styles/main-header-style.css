@@ -1,0 +1,58 @@
+.header-bg {
+    background-color: #B80C09;
+    padding: 7px 8px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.logo {
+    height: auto;
+}
+
+/* Uncomment if you're using the hamburger menu
+.hamburger-icon {
+    display: none;
+}
+
+.hamburger-button {
+    outline: none;
+}
+
+.hamburger-svg {
+    width: 24px;
+    height: 24px;
+}
+*/
+
+.nav-menu-container {
+    width: 50%;
+    color: #FBFBFF;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none; /* This line removes the list markers */
+}
+
+.nav-link {
+    color: #FBFBFF;
+    padding: 0 36px;
+}
+
+.nav-menu li {
+    padding: 0; /* Adjust or remove padding as needed */
+    margin: 0; /* Adjust or remove margin as needed */
+}

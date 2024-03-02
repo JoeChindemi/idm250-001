@@ -1,5 +1,7 @@
-<footer class = "flex items-center justify-center">
-    <p class="mr-2">&copy; 2024 | IDM 250</p>
+<footer class="footer">
+    <p class="copyright">
+        Copyright &copy; <?php echo date('Y'); ?>  <?php bloginfo('name'); ?> &nbsp;
+    </p>
     <?php wp_nav_menu([
         'theme_location' => 'footer'
     ]); ?>

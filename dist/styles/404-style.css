@@ -1,0 +1,53 @@
+.page-wrapper {
+    background-color: #ffffff;
+  }
+  
+  .content-container {
+    max-width: 112rem; /* Tailwind max-w-7xl */
+    padding: 2.5rem 1.5rem; /* Tailwind px-6 pt-10 pb-16 */
+    margin: 0 auto;
+  }
+  
+  .error-message-container {
+    max-width: 64rem; /* Tailwind max-w-2xl */
+    margin: 5rem auto 0; /* Tailwind mt-20 */
+    text-align: center;
+  }
+  
+  .error-code {
+    color: #4f46e5; /* Tailwind text-indigo-600 */
+    font-size: 1rem; /* Tailwind text-base */
+    font-weight: 600; /* Tailwind font-semibold */
+    line-height: 2; /* Tailwind leading-8 */
+  }
+  
+  .error-title {
+    margin-top: 1rem; /* Tailwind mt-4 */
+    font-size: 1.875rem; /* Tailwind text-3xl */
+    font-weight: 700; /* Tailwind font-bold */
+    color: #1f2937; /* Tailwind text-gray-900 */
+  }
+  
+  .error-description {
+    margin-top: 1rem; /* Tailwind mt-4 */
+    font-size: 1rem; /* Tailwind text-base */
+    line-height: 1.75; /* Tailwind leading-7 */
+    color: #4b5563; /* Tailwind text-gray-600 */
+  }
+  
+  .navigation-container {
+    max-width: 48rem; /* Tailwind max-w-lg */
+    margin: 4rem auto 0; /* Tailwind mt-16 */
+  }
+  
+  .back-to-home-container {
+    margin-top: 2.5rem; /* Tailwind mt-10 */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .back-to-home-link {
+    color: #4f46e5; /* Tailwind text-indigo-600 */
+    font-size: 0.875rem; /* Tailwind text-sm */
+    font-weight: 600; /* Tailwind font-semibold */
+  }
