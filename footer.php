@@ -1,3 +1,4 @@
+<!-- Standard Footer -->
 <footer class="footer">
     <p class="copyright">
         Copyright &copy; <?php echo date('Y'); ?>  <?php bloginfo('name'); ?> &nbsp;

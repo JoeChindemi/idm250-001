@@ -15,24 +15,21 @@
   }
   
   .error-code {
-    color: #4f46e5; /* Tailwind text-indigo-600 */
-    font-size: 1rem; /* Tailwind text-base */
-    font-weight: 600; /* Tailwind font-semibold */
+    color: #0B4F6C; /* Tailwind text-indigo-600 */
+    font-size: 5rem; /* Tailwind text-base */
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400; /* Tailwind font-semibold */
+    font-style: normal;
     line-height: 2; /* Tailwind leading-8 */
   }
   
-  .error-title {
-    margin-top: 1rem; /* Tailwind mt-4 */
-    font-size: 1.875rem; /* Tailwind text-3xl */
-    font-weight: 700; /* Tailwind font-bold */
-    color: #1f2937; /* Tailwind text-gray-900 */
-  }
-  
   .error-description {
-    margin-top: 1rem; /* Tailwind mt-4 */
-    font-size: 1rem; /* Tailwind text-base */
+    margin-top: -35px; /* Tailwind mt-4 */
+    font-size: 16px; /* Tailwind text-base */
     line-height: 1.75; /* Tailwind leading-7 */
     color: #4b5563; /* Tailwind text-gray-600 */
+    font-family: "Hind";
+    font-weight: 600;
   }
   
   .navigation-container {
@@ -47,7 +44,20 @@
   }
   
   .back-to-home-link {
-    color: #4f46e5; /* Tailwind text-indigo-600 */
-    font-size: 0.875rem; /* Tailwind text-sm */
-    font-weight: 600; /* Tailwind font-semibold */
+    background-color: #FBFBFF; /* Change the background color */
+    color: #040F16; /* Change the text color */
+    border-radius: 30px; /* Round the corners of the button */
+    padding: 12px 24px; /* Adjust the padding around the text */
+    font-size: 16px; /* Change the font size */
+    border: 2px solid #000; /* 2px solid black border */
+    border-color: #040F16;
+    font-family: "Hind";
+    font-weight: 600;
+    text-decoration: none;
   }
+
+  .back-to-home-link:hover {
+    background-color: #040F16; /* Darker shade on hover */
+    color: #FBFBFF; /* You can change the text color on hover if needed */
+    transition: .2s;
+}

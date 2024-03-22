@@ -1,0 +1,88 @@
+.custom-article {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    overflow: hidden;
+    border-radius: 16px; /* rounded-2xl */
+    background-color: #1F2937; /* bg-gray-900 */
+    padding: 100px; /* p-8 */
+    margin-bottom: 20px;
+    height: auto;
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    border: 2px black;
+    transition: transform 0.25s ease-in-out; /* Smooth transition for transform */
+  }
+
+  .custom-article:hover {
+    transform: scale(1.05); /* Increase the size of the article, including the background */
+    transition: transform 0.25s ease-in-out; /* Smooth transition for transform */
+    cursor: pointer;
+}
+  
+  .article-thumbnail {
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .gradient-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    background-image: linear-gradient(to top, #1F2937, rgba(31, 41, 55, 0.25));
+  }
+  
+  .ring-effect {
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    border-radius: 16px; /* rounded-2xl */
+    box-shadow: 0 0 0 1px rgba(31, 41, 55, 0.1);
+  }
+  
+  .article-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px; /* gap-y-1 */
+    overflow: hidden;
+    font-size: 14px; /* text-sm */
+    line-height: 24px; /* leading-6 */
+    color: #D1D5DB; /* text-gray-300 */
+  }
+  
+  .article-title a {
+    font-family: "Fugaz one";
+    margin-top: 12px; /* mt-3 */
+    font-size: 30px; /* text-lg */
+    font-weight: 600; /* font-semibold */
+    line-height: 24px; /* leading-6 */
+    color: #FFFFFF; /* text-white */
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .article-title{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+  @media (max-width: 600px) { 
+    .custom-article {
+      width: 90%;
+      max-width: 900px;
+    }
+  }

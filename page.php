@@ -10,8 +10,21 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-page
  */
 get_header(); ?>
-<h1>
-  <?php echo get_the_title(); ?>
-</h1>
-<p>This is a page.php template</p>
+  <!-- <p>This is a page.php template</p> -->
+  <div class="title_container" style="background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .2)), url('<?php echo get_the_post_thumbnail_url(); ?>');">
+        <h1 class = "title">
+            <?php echo get_the_title(); ?>
+        </h1>
+    </div>
+    <div class = "content">
+        <?php if (has_excerpt()): ?>
+        <div class="thumbnail-excerpt">
+            <?php echo get_the_excerpt(); ?>
+        </div>
+
+        <?php endif; ?>
+            <?php
+            echo get_the_content();
+        ?>
+    </div>
 <?php get_footer(); ?>

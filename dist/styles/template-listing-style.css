@@ -1,0 +1,77 @@
+/* *{
+    background-color: green;
+} */
+
+.title_container{
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #0B4F6C;
+    height: 200px; /* You might want to adjust this for vertical centering */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('<?php echo get_the_post_thumbnail_url(); ?>');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+}
+.title_container h1{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+/* .featured_content{
+    width: 100%;
+} */
+
+/* Pagination container */
+.pagination {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center the pagination */
+    margin: 20px 0; /* Add some space above and below the pagination */
+    padding: 10px; /* Add some padding inside the pagination container */
+}
+
+/* Pagination links */
+.pagination a {
+    color: #333; /* Text color */
+    background-color: #FBFBFF; /* Background color */
+    border: 2px solid #040F16; /* Border color */
+    padding: 5px 10px; /* Padding inside each link */
+    margin: 0 2px; /* Space between links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Text size */
+    font-family: "Hind";
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Pagination links on hover */
+.pagination a:hover {
+    background-color: #040F16; /* Background color on hover */
+    color: #FBFBFF; /* Text color on hover */
+}
+
+/* Current page link */
+.pagination .current {
+    color: #FBFBFF; /* Text color */
+    background-color: #009FE2; /* Background color */
+    border: 2px solid #040F16; /* Border color */
+    padding: 5px 10px; /* Padding inside each link */
+    margin: 0 2px; /* Space between links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Text size */
+    font-family: "Hind";
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Disabled pagination links (Prev/Next when not applicable) */
+.pagination .disabled {
+    color: #FBFBFF; /* Text color for disabled links */
+    cursor: not-allowed; /* Cursor style for disabled links */
+    background-color: #FBFBFF; /* Background color for disabled links */
+    border-color: #FBFBFF; /* Border color for disabled links */
+}

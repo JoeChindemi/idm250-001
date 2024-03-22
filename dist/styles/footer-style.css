@@ -5,4 +5,30 @@
     background-color: #B80C09;
     padding: 12px 8px;
     color: #FBFBFF;
+    font-family: 'Hind';
+    font-weight: 300;
+    margin-top: 25px;
+}
+
+
+.footer a:link{
+    list-style-type: none;
+    color:white;
+    font-weight:500;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.footer a:visited{
+    color:#01BAEF;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@media (max-width: 500px) {
+    .footer{
+        display: flex;
+        flex-direction:column;
+        padding: 1px 1px;
+    }
 }

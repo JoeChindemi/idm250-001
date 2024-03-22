@@ -10,4 +10,26 @@
  *
  */
 get_header(); ?>
+    <div class = "title_container">
+        <h1 class = "title">
+            <?php echo get_the_title(); ?>
+        </h1>
+    </div>
+    <div class = "content">
+        <?php
+            if (has_post_thumbnail()) {
+                echo get_the_post_thumbnail();
+            }
+        ?> 
+
+        <?php if (has_excerpt()): ?>
+        <div class="thumbnail-excerpt">
+            <?php echo get_the_excerpt(); ?>
+        </div>
+
+        <?php endif; ?>
+            <?php
+            echo get_the_content();
+        ?>
+    </div>
 <?php get_footer(); ?>
