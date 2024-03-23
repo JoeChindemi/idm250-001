@@ -1,8 +1,9 @@
+<!-- Main Header styles -->
 <header class="header-bg">
     <div class="header-container">
         <div class="logo-container">
             <a href="<?php echo home_url(); ?>">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/headerLogo.svg" alt="Logo" class="logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/headerlogo.svg" alt="Logo" class="logo">
             </a>
         </div>
         <div class="nav-menu-container">

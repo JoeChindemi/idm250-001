@@ -1,16 +1,13 @@
-/* *{
-    background-color: green;
-} */
-
+/* Default Page styles (for title inside hero image */ 
 .title_container{
-    display: flex; /* Use Flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #0B4F6C;
-    height: 200px; /* You might want to adjust this for vertical centering */
+    height: 200px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('<?php echo get_the_post_thumbnail_url(); ?>');
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the background image */
+    background-size: cover;
+    background-position: center;
 }
 .title_container h1{
     color: white;

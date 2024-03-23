@@ -1,3 +1,4 @@
+/* Styles for main header */
 .header-bg {
     background-color: #B80C09;
     padding: 7px 8px;
@@ -9,10 +10,10 @@
     align-items: center;
     padding: 10px;
 
-    position: sticky; /* This line makes the header sticky */
-    top: 0; /* This line ensures the header sticks to the top of the page */
-    z-index: 1000; /* This ensures the header stays on top of other content */
-    background-color: inherit; /* This ensures the background color of the sticky header remains consistent */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: inherit;
 }
 
 .logo-container {
@@ -43,7 +44,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    list-style-type: none; /* This line removes the list markers */
+    list-style-type: none;
 }
 
 .nav-link {
@@ -55,11 +56,10 @@
 }
 
 .nav-menu li {
-    padding: 0; /* Adjust or remove padding as needed */
-    margin: 0; /* Adjust or remove margin as needed */
+    padding: 0;
+    margin: 0;
 }
 
-/* HAMBURGER MENU */
 .hamburger {
     position: relative;
     appearance: none;
@@ -99,7 +99,6 @@
 
 .mobile-nav{
     position: fixed;
-    /* display: block; */
     top:0;
     left:100%;
     width:100%;
@@ -115,7 +114,7 @@
 }
 
 .mobile-nav ul {
-    list-style-type: none; /* Removes bullets */
+    list-style-type: none;
 }
 
 .mobile-nav li {
@@ -151,19 +150,14 @@
     }
 
     .hamburger-container {
-        display: block; /* Ensure this is set to make the container visible */
+        display: block;
     }
 
-    .hamburger { /* Make sure the hamburger button itself is also set to display */
+    .hamburger {
         display: block;
     }
 
     .hamburger_links li a {
         display: block;
     }
-
-    /* .logo {
-        margin-left: 0px;
-        margin-right: auto;
-    } */
 }

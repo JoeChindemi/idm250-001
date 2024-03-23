@@ -1,19 +1,19 @@
+/* Styles for front-page */
 .hero-container {
     width:100%;
-    display: flex; /* Enable Flexbox */
+    display: flex;
     margin: 0 auto;
-    align-items: center; /* Align items vertically in the center */
-    justify-content: space-between; /* Add space between the two child elements */
+    align-items: center;
+    justify-content: space-between;
     margin-top: 40px;
 }
 
 .front_title, .hero-image {
     width: 50%;
-    flex: 1; /* Allow both children to grow and take up equal space */
-    padding: 25px; /* Add some padding around the content for spacing (optional) */
+    flex: 1;
+    padding: 25px;
 }
 
-/* Optional: Add more specific styles for the hero-image, such as limiting its size */
 .hero-image img {
     max-width: 100%;
     height: auto;
@@ -43,13 +43,6 @@
     font-weight: 500;
 }
 
-/* .front-title > * {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-} */
-
 .hero-image img{
     border-radius: 30px;
     width: 100%;
@@ -61,17 +54,17 @@
         padding: 1px;
     }
     .hero-container {
-        flex-direction: column; /* Stack child elements vertically */
+        flex-direction: column;
         margin-top: 5px;
         padding: 0px;
     }
     .feat_header{
         margin-top: 0px;
     }
-    /* Optional: Adjustments for smaller screens */
+
     .front_title, .hero-image {
-        flex: none; /* Remove flex grow/shrink rules */
-        width: 100%; /* Make each child take up the full width */
+        flex: none;
+        width: 100%;
     }
 
     .front_title h1{

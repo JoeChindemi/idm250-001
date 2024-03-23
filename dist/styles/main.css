@@ -1,18 +1,22 @@
+/* Main styles for content echo throughout the pages */
 *{
     box-sizing: border-box;
     font-size: 16px;
 }
 
+body{
+    margin: 0;
+}
+
 .content{
     width: 100%;
     padding: 30px;
-    /* background-color: red; */
     max-width: 850px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column; /* sets the main axis to vertical */
-    justify-content: center; /* centers items vertically */
-    align-items: flex-start; /* aligns items to the left */
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
     text-align: left;
     height: auto;
 }
@@ -98,27 +102,29 @@
 }
 
 .content .wp-block-quote {
-    font-style: italic; /* Makes the text italic */
-    background-color: none; /* Light background color */
-    color: #cd0000; /* Dark text color */
+    font-style: italic;
+    background-color: none;
+    color: #cd0000;
     font-family: 'Hind';
     font-weight: 700;
     font-size: 16px;
+    text-align: left;
 }
 .content .wp-block-quote p{
-    font-style: italic; /* Makes the text italic */
-    color: #cd0000; /* Dark text color */
+    font-style: italic;
+    color: #cd0000;
     font-family: 'Hind';
     font-weight: 700;
     font-size: 16px;
+    text-align: left;
 }
 
 
 .content .wp-block-image {
-    display: flex; /* Make the container a flex container */
+    display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content horizontally in the container */
-    align-items: center; /* Center content vertically in the container */
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
 }
 
@@ -139,48 +145,40 @@
     width: 100%;
 }
 
-/* This targets all <ol> tags directly, but it might affect other areas of your site as well */
 .content ol,.content ul{
     font-family: "Hind";
     font-weight: 400;
     color: #040F16;
 }
 
-/* Targeting the button block to center it */
 .content .wp-block-buttons {
-    display: flex; /* Use flexbox layout */
-    justify-content: center; /* Center the button horizontally */
-    align-items: center; /* Center the button vertically, if needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
 }
 
-/* Targeting the link within the button block */
 .content .wp-block-button__link {
-    background-color: #FBFBFF; /* Change the background color */
-    color: #040F16; /* Change the text color */
-    border-radius: 30px; /* Round the corners of the button */
-    padding: 12px 24px; /* Adjust the padding around the text */
-    font-size: 16px; /* Change the font size */
-    border: 2px solid #000; /* 2px solid black border */
+    background-color: #FBFBFF;
+    color: #040F16;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 2px solid #000;
     border-color: #040F16;
     font-family: "Hind";
     font-weight: 600;
 }
 
-
-
-/* Change the styles on hover */
 .content .wp-block-button__link:hover {
-    background-color: #040F16; /* Darker shade on hover */
-    color: #FBFBFF; /* You can change the text color on hover if needed */
+    background-color: #040F16;
+    color: #FBFBFF;
     transition: .2s;
 }
 
-/* Thumbnail Image */
 .content .post-thumbnail img,.wp-post-image {
-    /* Your styles here */
-    max-width: 100%; /* Ensuring the image is responsive */
-    height: auto; /* Maintaining the aspect ratio */
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -198,14 +196,13 @@
     margin: 25px auto;
 }
 
-/* Container for thumbnail and excerpt */
 .content .thumbnail-excerpt {
     display: flex;
-    flex-direction: column; /* Stack them vertically */
+    flex-direction: column;
     justify-content: center;
-    align-items: center; /* Center-align the items */
+    align-items: center;
     margin: 0 auto;
-    margin-bottom: 20px; /* Space below each thumbnail excerpt */
+    margin-bottom: 20px;
     color: #0B4F6C;
     font-family: "Hind";
     font-size: 16px;
@@ -214,20 +211,19 @@
     padding: 20px;
 }
 
-/* Basic table styles */
 .content table {
-    width: 100%; /* Full width tables */
-    border-collapse: collapse; /* Collapse borders */
-    margin: 20px 0; /* Add some space around the table */
-    font-size: 16px; /* Adjust font size as needed */
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
     font-family: "Hind";
-    color: #333; /* Text color */
-    background-color: #f9f9f9; /* Light background for the table */
+    color: #333;
+    background-color: #f9f9f9;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
-    border-style: 1px solid #0B4F6C; /* Add a bottom border to each row */
+    border-style: 1px solid #0B4F6C;
 }
 
 /* Table headers */
@@ -238,34 +234,33 @@
 }
 
 .content th {
-    background-color: #0386d8; /* Slightly darker background for headers */
-    color: #FBFBFF; /* Text color for headers */
+    background-color: #0386d8;
+    color: #FBFBFF;
     border-color: #0B4F6C;
-    font-weight: 700; /* Make header text bold */
-    padding: 10px; /* Padding inside header cells */
-    text-align: left; /* Align text to the left */
+    font-weight: 700;
+    padding: 10px;
+    text-align: left;
 }
 
 .content tfoot {
-    background-color: #FBFBFF; /* Slightly darker background for headers */
-    color: #0B4F6C; /* Text color for headers */
-    font-weight: 700; /* Make header text bold */
-    padding: 10px; /* Padding inside header cells */
-    text-align: left; /* Align text to the left */
+    background-color: #FBFBFF;
+    color: #0B4F6C;
+    font-weight: 700;
+    padding: 10px;
+    text-align: left;
     border-color: #0B4F6C;
 }
-/* Style for videos uploaded to WordPress */
+
 .content .wp-block-video {
     font-family: "Hind";
-    max-width: 100%; /* Ensure it's responsive */
-    margin: 20px auto; /* Add some margin and center it */
+    max-width: 100%;
+    margin: 20px auto;
 }
 
-/* Style for embedded videos from external sources like YouTube */
 .content .wp-block-embed {
     font-family: "Hind";
-    max-width: 100%; /* Ensure it's responsive */
-    margin: 20px auto; /* Add some margin and center it */
+    max-width: 100%;
+    margin: 20px auto;
 }
 
 .content p + .wp-block-buttons {
@@ -301,7 +296,6 @@
     }
    .content{
     padding: 15px;
-    /* background-color: blue; */
    }
    .content h1 {
     font-size: 50px;
@@ -333,7 +327,6 @@
     }
    .content{
     padding: 15px;
-    /* background-color: blue; */
    }
    .content h1 {
     font-size: 45px;

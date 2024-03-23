@@ -1,16 +1,13 @@
-/* *{
-    background-color: blue;
-} */
-
+/* Style for sidebar template */
 .title_container{
-    display: flex; /* Use Flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #0B4F6C;
-    height: 200px; /* You might want to adjust this for vertical centering */
+    height: 200px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('<?php echo get_the_post_thumbnail_url(); ?>');
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the background image */
+    background-size: cover;
+    background-position: center;
 }
 .title_container h1{
     color: white;
@@ -21,11 +18,11 @@
 
 .thumbnail-excerpt {
     display: flex;
-    flex-direction: column; /* Stack them vertically */
+    flex-direction: column;
     justify-content: center;
-    align-items: center; /* Center-align the items */
+    align-items: center;
     margin: 0 auto;
-    margin-bottom: 20px; /* Space below each thumbnail excerpt */
+    margin-bottom: 20px;
     color: #0B4F6C;
     font-family: "Hind";
     font-size: 16px;
@@ -49,7 +46,6 @@
     align-items: flex-start;
 }
 
-/* Sidebar Div styles */
 .sidebar{
     flex-basis: 20%;
     max-width: 20%;
@@ -65,9 +61,6 @@
     font-family: "Hind";
     text-align: left;
     width: 100%;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .sidebar .widget > *
@@ -108,7 +101,7 @@
 
 .sidebar .widget .wp-block-embed__wrapper iframe {
     width: 100%;
-    height: auto; /* Adjust the height as needed, or use 'auto' for responsive height based on the aspect ratio */
+    height: auto;
 }
 
 
@@ -160,11 +153,10 @@
     color: #040F16
 }
 
-
 @media (max-width: 768px) {
     .content, .sidebar {
-        flex-basis: 100%; /* Both .content and .sidebar take up full width */
-        max-width: 100%; /* Ensure they don't grow beyond 100% */
+        flex-basis: 100%;
+        max-width: 100%;
     }
     .sidebar{
         display: flex;

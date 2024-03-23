@@ -1,3 +1,4 @@
+/* Card overlay styles build */
 .custom-article {
     margin: 0 auto;
     display: flex;
@@ -9,20 +10,20 @@
     flex-direction: column;
     justify-content: end;
     overflow: hidden;
-    border-radius: 16px; /* rounded-2xl */
-    background-color: #1F2937; /* bg-gray-900 */
-    padding: 100px; /* p-8 */
+    border-radius: 16px;
+    background-color: #1F2937;
+    padding: 100px;
     margin-bottom: 20px;
     height: auto;
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the background image */
+    background-size: cover;
+    background-position: center;
     border: 2px black;
-    transition: transform 0.25s ease-in-out; /* Smooth transition for transform */
+    transition: transform 0.25s ease-in-out;
   }
 
   .custom-article:hover {
-    transform: scale(1.05); /* Increase the size of the article, including the background */
-    transition: transform 0.25s ease-in-out; /* Smooth transition for transform */
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
     cursor: pointer;
 }
   
@@ -46,27 +47,27 @@
     position: absolute;
     inset: 0;
     z-index: -10;
-    border-radius: 16px; /* rounded-2xl */
+    border-radius: 16px;
     box-shadow: 0 0 0 1px rgba(31, 41, 55, 0.1);
   }
   
   .article-details {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px; /* gap-y-1 */
+    gap: 4px;
     overflow: hidden;
-    font-size: 14px; /* text-sm */
-    line-height: 24px; /* leading-6 */
-    color: #D1D5DB; /* text-gray-300 */
+    font-size: 14px;
+    line-height: 24px;
+    color: #D1D5DB;
   }
   
   .article-title a {
     font-family: "Fugaz one";
-    margin-top: 12px; /* mt-3 */
-    font-size: 30px; /* text-lg */
-    font-weight: 600; /* font-semibold */
-    line-height: 24px; /* leading-6 */
-    color: #FFFFFF; /* text-white */
+    margin-top: 12px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #FFFFFF;
     text-decoration: none;
     text-align: center;
   }
